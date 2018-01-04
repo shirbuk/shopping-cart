@@ -42,7 +42,7 @@
       <p class="cart-title">Items in Cart</p>
       <div class="cart-list"></div>
       <p>Total: $<span class="total">0</span></p>
-      <button type="button" class="btn clear-cart">Clear Cart</button>
+      <button type="button" class="btn clear-cart" id="shoppingcartbutton">Clear Cart</button>
     </div>
 
 
@@ -147,7 +147,16 @@
       </div>
     </div>
   </div>
-    <script type="text/javascript" src="jquery/dist/jquery.min.js"></script>
+<scirpt id="shopping-template" type="text/x-handlebars-template">
+  <div class="cartItem">
+  <p>
+  <span> {{ name }} - ${{ price }} USD</span>
+  <span> <button type="button" class="removeBtn"> </button></span>
+</p> 
+</div>
+</scirpt>
+
+  <script type="text/javascript" src="jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="bootstrap/dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="handlebars/dist/handlebars.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
