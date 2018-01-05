@@ -2,15 +2,15 @@
 var cart = [];
 
 
-var saveToLocalStorage = function (item) {
-  localStorage.setItem('shoppingCart', JSON.stringify(cart));
-}
+// var saveToLocalStorage = function (item) {
+//   localStorage.setItem('shoppingCart', JSON.stringify(cart));
+// }
 
-var getFromLocalStorage = function () {
-  return JSON.parse(localStorage.getItem('shoppingCart' || '[]');
-}
+// var getFromLocalStorage = function () {
+//   return JSON.parse(localStorage.getItem('shoppingCart' || '[]');
+// }
 
-cart = getFromLocalStorage();
+// cart = getFromLocalStorage();
 
 var calcTotal = function() {
   var total = 0;
